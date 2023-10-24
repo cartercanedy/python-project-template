@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "starter-template"
+authors = [
+  { name="Carter Canedy", email="cartercanedy42@gmail.com" },
+]
+description = "Probably the start of a really interesting library."
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+dependencies = []
+dynamic = [ "version" ]
+
+[tool.hatch.version]
+path = "src/starter-template/__init__.py"
+
+[tool.hatch.build]
+directory = "./build"
+exclude = []
